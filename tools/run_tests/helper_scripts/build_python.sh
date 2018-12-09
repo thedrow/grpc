@@ -140,7 +140,7 @@ fi
 # Perform build operations #
 ############################
 
-echo $PATH
+export PATH="/opt/pypy3.5-6.0.0-linux_x86_64-portable/bin:${PATH}"
 
 if [[ "$(inside_venv)" ]]; then
   VENV_PYTHON="$PYTHON"
