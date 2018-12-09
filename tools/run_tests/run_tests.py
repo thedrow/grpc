@@ -768,6 +768,10 @@ class PythonLanguage(object):
             return 'alpine'
         elif self.args.compiler == 'python3.4':
             return 'jessie'
+        elif self.args.compiler == "pypy3":
+            return 'stretch_pypy3'
+        elif self.args.compiler == "pypy":
+            return 'stretch_pypy'
         else:
             return 'stretch_3.7'
 

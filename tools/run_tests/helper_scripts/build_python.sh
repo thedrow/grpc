@@ -140,6 +140,8 @@ fi
 # Perform build operations #
 ############################
 
+echo $PATH
+
 if [[ "$(inside_venv)" ]]; then
   VENV_PYTHON="$PYTHON"
 else
