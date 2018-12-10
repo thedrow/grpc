@@ -1760,10 +1760,6 @@ def _build_and_run(check_cancelled,
             if (re.search(args.regex, spec.shortname) and
                 (args.regex_exclude == '' or
                  not re.search(args.regex_exclude, spec.shortname))))
-        from pprint import pprint
-        pprint(one_run)
-        import sys
-        sys.exit(0)
         # When running on travis, we want out test runs to be as similar as possible
         # for reproducibility purposes.
         if args.travis and args.max_time <= 0:
