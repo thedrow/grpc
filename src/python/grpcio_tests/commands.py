@@ -92,6 +92,8 @@ class TestLite(setuptools.Command):
         pass
 
     def run(self):
+        import faulthandler
+        faulthandler.enable()
         self._add_eggs_to_path()
 
         import tests
